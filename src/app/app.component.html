@@ -1,0 +1,8 @@
+<h1>Annuaire</h1>
+
+<!-- ngModel a permis le lien avec la variable reactive dans le app component ts -->
+<input type="text" [(ngModel)]="searchText">
+<!-- (click) permet de binder bouton avec fonction -->
+<button (click)="handleSearch()">Chercher</button>
+<button (click)="handleList()">Tout</button>
+<div *ngFor="let entry of entries"> {{ entry }}</div>
